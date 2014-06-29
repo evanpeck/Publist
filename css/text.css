@@ -1,0 +1,76 @@
+body
+{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+    color: #333333;
+    font-family:"Georgia", serif;
+}
+
+.pub
+{
+  padding-bottom: 15px;
+}
+
+.pubInfo
+{
+  display: table-cell;
+  font-size: 95%;
+}
+
+.section
+{
+    padding-top: 15px;
+    margin-bottom: 10px;
+}
+
+.me
+{
+    font-weight: bolder;
+    color: black;
+}
+
+.title
+{
+    /*font-weight: bolder;*/
+    color:rgb(145,20,20);
+}
+
+.award
+{
+    font-weight: bolder;
+    color: #E86C4B;
+}
+
+.venue
+{
+    color: gray;
+}
+
+
+.thumbnail
+{
+    display: table-cell;
+    float: left;
+    margin-right: 20;
+    border:1px solid #021a40;
+}
+
+.authors
+{
+    /*color: #185A7C;*/
+    color: #474747;
+}
+
+
+a:link, a:visited
+{
+		color:rgb(145,20,20);
+		text-decoration: none;
+}
+
+a:hover, a:active {
+  	color:rgb(145,20,20);
+  	text-decoration: underline;
+}

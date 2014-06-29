@@ -1,0 +1,164 @@
+{
+
+  "publications" : [
+
+  {
+    "key"        :  "dis_14",
+    "author"     :  ["Evan M. Peck"],
+    "title"      :  "Designing Brain-Computer Interfaces for Intelligent Information Delivery Systems",
+    "venue"      :  "Ph.D. Dissertation",
+    "year"       :  2014,
+    "thumbnail"  :  "brainImage.png",
+    "type"       :  "dissertation",
+    "tags"       :  ["BCI"],
+    "desc"       :  "This is brain guided bubble cursor"
+  },
+
+  {
+    "key"        :  "uist_14",
+    "author"     :  ["Daniel Afergan", "Tomoki Shibata", "Sam Hincks", "Evan M. Peck", "Beste F. Yuksel", "Remco Chang", "Robert J.K. Jacob"],
+    "title"      :  "Brain-Based Target Expansion",
+    "venue"      :  "To appear in UIST: ACM Symposium on User Interface Software and Technology",
+    "year"       :  2014,
+    "thumbnail"  :  "bubbleCursor.png",
+    "type"       :  "conference",
+    "tags"       :  ["BCI"],
+    "desc"       :  "This is brain guided bubble cursor"
+  },
+
+  {
+    "key"        :  "phycs_14",
+    "author"     :  ["Evan M. Peck", "Daniel Afergan", "Beste F. Yuksel", "Remco Chang", "Robert J.K. Jacob"],
+    "title"      :  "Using fNIRS to Measure Mental Workload in the Real World",
+    "venue"      :  "Advances in Physiological Computing",
+    "year"       :  2014,
+    "thumbnail"  :  "NIRSuse.jpg",
+    "pdf"        :  "papers/chi14_dynamicdifficulty.pdf",
+    "type"       :  "chapter",
+    "tags"       :  ["BCI"],
+    "desc"       :  "This is brain guided bubble cursor"
+  },
+
+  {
+    "key"        :  "chi_14",
+    "author"     :  ["Daniel Afergan", "Evan M. Peck", "Erin Solovey", "A.J. Jenkins", "Sam Hincks", "Remco Chang", "Robert J.K. Jacob"],
+    "title"      :  "Dynamic Difficulty Using Brain Metrics",
+    "venue"      :  "CHI: ACM Conference on Human Factors in Computing Systems",
+    "year"       :  2014,
+    "thumbnail"  :  "UAV.png",
+    "pdf"        :  "papers/chi14_dynamicdifficulty.pdf",
+    "type"       :  "conference",
+    "tags"       :  ["BCI"],
+    "desc"       :  "This paper was about fNIRS and vis",
+    "award"      :  "Best Paper Honorable Mention"
+  },
+
+  {
+    "key"        :  "chi_13",
+    "author"     :  ["Evan M. Peck", "Beste F. Yuksel", "Alvitta Ottley", "Robert J.K. Jacob", "Remco Chang"],
+    "title"      :  "Using fNIRS Brain Sensing to Evaluate Information Visualization Interfaces",
+    "venue"      :  "CHI: ACM Conference on Human Factors in Computing Systems",
+    "year"       :  2013,
+    "thumbnail"  :  "mcgill.png",
+    "pdf"        :  "papers/CHI_fNIRS_2013.pdf",
+    "type"       :  "conference",
+    "tags"       :  ["vis"],
+    "desc"       :  "This paper was about fNIRS and vis"
+  },
+
+  {
+    "key"        :  "me_13a",
+    "author"     :  ["Daniel Afergan", "Evan M. Peck", "Remco Chang", "Robert J.K. Jacob"],
+    "title"      :  "Using Passive Input to Adapt Visualization Systems to the Individual",
+    "venue"      :  "CHI Workshop: Many People Many Eyes: Aggregating Influences of Visual Perception on User Interface Design",
+    "year"       :  2013,
+    "thumbnail"  :  "manyPeople.png",
+    "pdf"        :  "papers/manyeyes_passiveinput.pdf",
+    "type"       :  "workshop",
+    "tags"       :  ["hci"],
+    "desc"       :  "This paper was about fNIRS and information filtering"
+  },
+
+  {
+    "key"        :  "me_13b",
+    "author"     :  ["Alvitta Ottley", "Evan M. Peck", "Lane Harrison", "Remco Chang"],
+    "title"      :  "The Adaptive User: Priming to Improve Interaction",
+    "venue"      :  "CHI Workshop: Many People Many Eyes: Aggregating Influences of Visual Perception on User Interface Design",
+    "year"       :  2013,
+    "thumbnail"  :  "priming.png",
+    "pdf"        :  "papers/manyeyes_priming.pdf",
+    "type"       :  "workshop",
+    "tags"       :  ["hci"],
+    "desc"       :  "This paper was about fNIRS and information filtering"
+  },
+
+  {
+    "key"        :  "ah_13",
+    "author"     :  ["Evan M. Peck", "Daniel Afergan", "Robert J.K. Jacob"],
+    "title"      :  "Using fNIRS as Input to Information Filtering Systems",
+    "venue"      :  "Augmented Human",
+    "year"       :  2013,
+    "thumbnail"  :  "brainImage.png",
+    "pdf"        :  "papers/epeck_AH2013.pdf",
+    "type"       :  "conference",
+    "tags"       :  ["hci"],
+    "desc"       :  "This paper was about fNIRS and information filtering"
+  },
+
+  {
+    "key"        :  "beliv_12",
+    "author"     :  ["Evan M. Peck", "Beste F. Yuksel", "Lane Harrison", "Alvitta Ottley", "Remco Chang"],
+    "title"      :  "Position Paper: Towards a 3-Dimensional Model of Individual Cognitive Differences",
+    "venue"      :  "BELIV: Beyond Time and Errors: Novel Evaluation Methods for Visualization",
+    "year"       :  2012,
+    "thumbnail"  :  "emptyCube.png",
+    "pdf"        :  "papers/IndDiff.pdf",
+    "type"       :  "workshop",
+    "tags"       :  ["vis"],
+    "desc"       :  "This paper was about fNIRS and vis"
+  },
+
+  {
+    "key"        :  "vis_11",
+    "author"     :  ["Evan M. Peck", "Erin Solovey", "Sara Su", "Robert J.K. Jacob", "Remco Chang"],
+    "title"      :  "Near to the Brain: Functional Near-Infrared Spectroscopy as a Lightweight Brain Imaging Technique for Visualization",
+    "venue"      :  "InfoVis: IEEE Information Visualization Posters",
+    "year"       :  2011,
+    "thumbnail"  :  "barPie.png",
+    "pdf"        :  "papers/INFOVIS2011-Poster-fNIRS.pdf",
+    "type"       :  "poster",
+    "tags"       :  ["vis"],
+    "desc"       :  "This paper was about fNIRS and vis",
+    "award"      :  "Best Poster"
+  },
+
+  {
+    "key"        :  "bbw_11a",
+    "author"     :  ["Evan M. Peck", "Francine Lalooses", "Krysta Chauncey"],
+    "title"      :  "Framing Meaningful Adaptation in a Social Context",
+    "venue"      :  "ACM CHI 2011 Workshop: Brain and Body Interfaces: Designing for Meaningful Interaction",
+    "year"       :  2011,
+    "thumbnail"  :  "social.png",
+    "pdf"        :  "papers/MeaningfulAdaptationContext.pdf",
+    "type"       :  "workshop",
+    "tags"       :  ["vis"],
+    "desc"       :  "This paper was about fNIRS and vis"
+  },
+
+  {
+    "key"        :  "bbw_11b",
+    "author"     :  ["Krysta Chauncey", "Evan M. Peck"],
+    "title"      :  "Access and Analysis: The Ethics of Brain-Computer Interfaces",
+    "venue"      :  "ACM CHI 2011 Workshop: Brain and Body Interfaces: Designing for Meaningful Interaction",
+    "year"       :  2011,
+    "thumbnail"  :  "fNIRS2.jpg",
+    "pdf"        :  "papers/ethicsBCI.pdf",
+    "type"       :  "workshop",
+    "tags"       :  ["vis"],
+    "desc"       :  "This paper was about fNIRS and vis"
+  }
+
+
+
+  ]
+}
