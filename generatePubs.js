@@ -1,27 +1,26 @@
 MY_NAME = "Evan M. Peck"
 USE_ICONS = true
 ICON_PATH =  "images/"
-ICON_SIZE = 70
+ICON_SIZE = 80
 
 d3.json('pubs.json', function(d){
     renderPubs(d.publications, '#publications');
 });
 
-
-function renderPubs(d, target){
+function renderPubs(d, target) {
   var div = d3.select(target);
+  var pubs = div.selectAll('pub')
+      .data(d);
 
-  var pubs = div.selectAll('publications')
-      .data(d)
-      .enter().append('div')
-        .classed('pub', true);
+  pubs.enter().append('div')
+      .classed('pub', true);
 
   // Add icon
   if (USE_ICONS) {
-    pubs.append('img')
+    pubs
+      .append('img')
       .classed('thumbnail', true)
       .attr('src', function(d) {
-        console.log(ICON_PATH + d.thumbnail);
         return ICON_PATH + d.thumbnail;
       })
       .attr('width', ICON_SIZE)
@@ -52,6 +51,22 @@ function renderPubs(d, target){
   pubInfo.append('div')
       .classed('venue', true)
       .text(function(d) { return d.venue + ' '+ d.year; });
+
+  // add links for supplementals
+  pubInfo.append('div')
+      .classed('supp', true)
+      .html(function(d) {
+        // First add paper pdf (if there is one)
+        var supplementals = ''
+        if (d.hasOwnProperty('pdf'))
+          supplementals += '<a href="' + d.pdf + '"> pdf </a>';
+        // then add everything else
+        for (var link in d.supp) {
+          supplementals += '| <a href="' + d.supp[link] + '"> ' + link + '</a> ';
+        }
+        return supplementals;
+      });
+
 
   // award
   // pubInfo.filter(function(d) { return d.award || ''; })

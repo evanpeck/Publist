@@ -1,6 +1,6 @@
 body
 {
-    width: 80%;
+    width: 75%;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 20px;
@@ -10,7 +10,7 @@ body
 
 .pub
 {
-  padding-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .pubInfo
@@ -57,16 +57,28 @@ body
     border:1px solid #021a40;
 }
 
+/*.thumbnail:hover
+{
+    display: table-cell;
+    float: left;
+    margin-right: 20;
+    border:3px solid rgb(145,20,20);
+}*/
+
 .authors
 {
     /*color: #185A7C;*/
     color: #474747;
 }
 
+.supp
+{
+  color: #474747;
+}
 
 a:link, a:visited
 {
-		color:rgb(145,20,20);
+    color:rgb(145,20,20);
 		text-decoration: none;
 }
 

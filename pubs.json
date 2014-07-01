@@ -33,10 +33,11 @@
     "venue"      :  "Advances in Physiological Computing",
     "year"       :  2014,
     "thumbnail"  :  "NIRSuse.jpg",
-    "pdf"        :  "papers/chi14_dynamicdifficulty.pdf",
+    "pdf"        :  "http://link.springer.com/chapter/10.1007/978-1-4471-6392-3_6",
     "type"       :  "chapter",
     "tags"       :  ["BCI"],
-    "desc"       :  "This is brain guided bubble cursor"
+    "desc"       :  "This is brain guided bubble cursor",
+    "supp"       :  {"book link":"http://link.springer.com/book/10.1007/978-1-4471-6392-3"}
   },
 
   {
@@ -50,7 +51,8 @@
     "type"       :  "conference",
     "tags"       :  ["BCI"],
     "desc"       :  "This paper was about fNIRS and vis",
-    "award"      :  "Best Paper Honorable Mention"
+    "award"      :  "Best Paper Honorable Mention",
+    "supp"       :  {"video preview":"https://www.youtube.com/watch?v=89nleUf-X8I"}
   },
 
   {
@@ -63,7 +65,8 @@
     "pdf"        :  "papers/CHI_fNIRS_2013.pdf",
     "type"       :  "conference",
     "tags"       :  ["vis"],
-    "desc"       :  "This paper was about fNIRS and vis"
+    "desc"       :  "This paper was about fNIRS and vis",
+    "supp"       :  {"video preview":"https://vimeo.com/57869681"}
   },
 
   {
@@ -76,7 +79,8 @@
     "pdf"        :  "papers/manyeyes_passiveinput.pdf",
     "type"       :  "workshop",
     "tags"       :  ["hci"],
-    "desc"       :  "This paper was about fNIRS and information filtering"
+    "desc"       :  "This paper was about fNIRS and information filtering",
+    "supp"       :  {"workshop site":"http://people.seas.harvard.edu/~reinecke/manyeyes/index.html"}
   },
 
   {
@@ -89,7 +93,8 @@
     "pdf"        :  "papers/manyeyes_priming.pdf",
     "type"       :  "workshop",
     "tags"       :  ["hci"],
-    "desc"       :  "This paper was about fNIRS and information filtering"
+    "desc"       :  "This paper was about fNIRS and information filtering",
+    "supp"       :  {"workshop site":"http://people.seas.harvard.edu/~reinecke/manyeyes/index.html"}
   },
 
   {
@@ -115,7 +120,8 @@
     "pdf"        :  "papers/IndDiff.pdf",
     "type"       :  "workshop",
     "tags"       :  ["vis"],
-    "desc"       :  "This paper was about fNIRS and vis"
+    "desc"       :  "This paper was about fNIRS and vis",
+    "supp"       :  {"BELIV site":"http://beliv.cs.univie.ac.at/mediawiki/index.php/BELIV2012"}
   },
 
   {
@@ -129,7 +135,8 @@
     "type"       :  "poster",
     "tags"       :  ["vis"],
     "desc"       :  "This paper was about fNIRS and vis",
-    "award"      :  "Best Poster"
+    "award"      :  "Best Poster",
+    "supp"       :  {"poster design":"papers/VisWeekPosterDesign.pdf"}
   },
 
   {
@@ -142,7 +149,8 @@
     "pdf"        :  "papers/MeaningfulAdaptationContext.pdf",
     "type"       :  "workshop",
     "tags"       :  ["vis"],
-    "desc"       :  "This paper was about fNIRS and vis"
+    "desc"       :  "This paper was about fNIRS and vis",
+    "supp"       :  {"talk":"http://vimeo.com/24511497", "workshop site":"http://brainandbody.physiologicalcomputing.net/"}
   },
 
   {
@@ -154,6 +162,19 @@
     "thumbnail"  :  "fNIRS2.jpg",
     "pdf"        :  "papers/ethicsBCI.pdf",
     "type"       :  "workshop",
+    "tags"       :  ["vis"],
+    "desc"       :  "This paper was about fNIRS and vis"
+  },
+
+  {
+    "key"        :  "comp_10",
+    "author"     :  ["Evan M. Peck", "Erin Solovey", "Audrey Girouard", "Leanne Hirshfield", "Krysta Chauncey", "Angelo Sassaroli", "Sergio Fantini", "Robert J.K. Jacob"],
+    "title"      :  "Your Brain, Your Computer, and You",
+    "venue"      :  "IEEE Computer: Invisible Computing Column",
+    "year"       :  2010,
+    "thumbnail"  :  "ieee.png",
+    "pdf"        :  "papers/ieeeComputer.pdf",
+    "type"       :  "journal",
     "tags"       :  ["vis"],
     "desc"       :  "This paper was about fNIRS and vis"
   }
