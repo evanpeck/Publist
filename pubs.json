@@ -9,9 +9,7 @@
     "venue"      :  "Ph.D. Dissertation",
     "year"       :  2014,
     "thumbnail"  :  "brainImage.png",
-    "type"       :  "dissertation",
-    "tags"       :  ["BCI"],
-    "desc"       :  "This is brain guided bubble cursor"
+    "type"       :  "dissertation"
   },
 
   {
@@ -21,9 +19,7 @@
     "venue"      :  "To appear in UIST: ACM Symposium on User Interface Software and Technology",
     "year"       :  2014,
     "thumbnail"  :  "bubbleCursor.png",
-    "type"       :  "conference",
-    "tags"       :  ["BCI"],
-    "desc"       :  "This is brain guided bubble cursor"
+    "type"       :  "conference"
   },
 
   {
@@ -35,8 +31,6 @@
     "thumbnail"  :  "NIRSuse.jpg",
     "pdf"        :  "http://link.springer.com/chapter/10.1007/978-1-4471-6392-3_6",
     "type"       :  "chapter",
-    "tags"       :  ["BCI"],
-    "desc"       :  "This is brain guided bubble cursor",
     "supp"       :  {"book link":"http://link.springer.com/book/10.1007/978-1-4471-6392-3"}
   },
 
@@ -49,8 +43,6 @@
     "thumbnail"  :  "UAV.png",
     "pdf"        :  "papers/chi14_dynamicdifficulty.pdf",
     "type"       :  "conference",
-    "tags"       :  ["BCI"],
-    "desc"       :  "This paper was about fNIRS and vis",
     "award"      :  "Best Paper Honorable Mention",
     "supp"       :  {"video preview":"https://www.youtube.com/watch?v=89nleUf-X8I"}
   },
@@ -64,8 +56,6 @@
     "thumbnail"  :  "mcgill.png",
     "pdf"        :  "papers/CHI_fNIRS_2013.pdf",
     "type"       :  "conference",
-    "tags"       :  ["vis"],
-    "desc"       :  "This paper was about fNIRS and vis",
     "supp"       :  {"video preview":"https://vimeo.com/57869681"}
   },
 
@@ -78,8 +68,6 @@
     "thumbnail"  :  "manyPeople.png",
     "pdf"        :  "papers/manyeyes_passiveinput.pdf",
     "type"       :  "workshop",
-    "tags"       :  ["hci"],
-    "desc"       :  "This paper was about fNIRS and information filtering",
     "supp"       :  {"workshop site":"http://people.seas.harvard.edu/~reinecke/manyeyes/index.html"}
   },
 
@@ -92,8 +80,6 @@
     "thumbnail"  :  "priming.png",
     "pdf"        :  "papers/manyeyes_priming.pdf",
     "type"       :  "workshop",
-    "tags"       :  ["hci"],
-    "desc"       :  "This paper was about fNIRS and information filtering",
     "supp"       :  {"workshop site":"http://people.seas.harvard.edu/~reinecke/manyeyes/index.html"}
   },
 
@@ -103,11 +89,9 @@
     "title"      :  "Using fNIRS as Input to Information Filtering Systems",
     "venue"      :  "Augmented Human",
     "year"       :  2013,
-    "thumbnail"  :  "brainImage.png",
+    "thumbnail"  :  "brainfilter.png",
     "pdf"        :  "papers/epeck_AH2013.pdf",
-    "type"       :  "conference",
-    "tags"       :  ["hci"],
-    "desc"       :  "This paper was about fNIRS and information filtering"
+    "type"       :  "conference"
   },
 
   {
@@ -119,8 +103,6 @@
     "thumbnail"  :  "emptyCube.png",
     "pdf"        :  "papers/IndDiff.pdf",
     "type"       :  "workshop",
-    "tags"       :  ["vis"],
-    "desc"       :  "This paper was about fNIRS and vis",
     "supp"       :  {"BELIV site":"http://beliv.cs.univie.ac.at/mediawiki/index.php/BELIV2012"}
   },
 
@@ -133,10 +115,19 @@
     "thumbnail"  :  "barPie.png",
     "pdf"        :  "papers/INFOVIS2011-Poster-fNIRS.pdf",
     "type"       :  "poster",
-    "tags"       :  ["vis"],
-    "desc"       :  "This paper was about fNIRS and vis",
     "award"      :  "Best Poster",
     "supp"       :  {"poster design":"papers/VisWeekPosterDesign.pdf"}
+  },
+
+  {
+    "key"        :  "xrds_11a",
+    "author"     :  ["Evan M. Peck", "Erin Solovey"],
+    "title"      :  "Neuroscience and Computing (Issue Editors)",
+    "venue"      :  "ACM XRDS: Crossroads",
+    "year"       :  2010,
+    "thumbnail"  :  "XRDS.png",
+    "pdf"        :  "papers/xrds-intro.pdf",
+    "type"       :  "article"
   },
 
   {
@@ -148,8 +139,6 @@
     "thumbnail"  :  "social.png",
     "pdf"        :  "papers/MeaningfulAdaptationContext.pdf",
     "type"       :  "workshop",
-    "tags"       :  ["vis"],
-    "desc"       :  "This paper was about fNIRS and vis",
     "supp"       :  {"talk":"http://vimeo.com/24511497", "workshop site":"http://brainandbody.physiologicalcomputing.net/"}
   },
 
@@ -161,9 +150,7 @@
     "year"       :  2011,
     "thumbnail"  :  "fNIRS2.jpg",
     "pdf"        :  "papers/ethicsBCI.pdf",
-    "type"       :  "workshop",
-    "tags"       :  ["vis"],
-    "desc"       :  "This paper was about fNIRS and vis"
+    "type"       :  "workshop"
   },
 
   {
@@ -174,12 +161,31 @@
     "year"       :  2010,
     "thumbnail"  :  "ieee.png",
     "pdf"        :  "papers/ieeeComputer.pdf",
-    "type"       :  "journal",
-    "tags"       :  ["vis"],
-    "desc"       :  "This paper was about fNIRS and vis"
+    "type"       :  "journal"
+  },
+
+  {
+    "key"        :  "mplay_08",
+    "author"     :  ["Charles Cusack", "Evan M. Peck", "Maria Riolo"],
+    "title"      :  "Volunteer Computing Games: Merging Online Casual Gaming with Volunteer Computing",
+    "venue"      :  "Meaningful Play",
+    "year"       :  2008,
+    "thumbnail"  :  "pebble.png",
+    "pdf"        :  "papers/volunteer_computing.pdf",
+    "type"       :  "paper"
+  },
+
+  {
+    "key"        :  "fplay_07",
+    "author"     :  ["Evan M. Peck", "Maria Riolo", "Charles Cusack"],
+    "title"      :  "Wildfire Wally: A Volunteer Computing Game",
+    "venue"      :  "Future Play",
+    "year"       :  2007,
+    "thumbnail"  :  "wally.png",
+    "pdf"        :  "papers/wildfire_wally.pdf",
+    "type"       :  "poster",
+    "supp"       :  {"poster design":"papers/FuturePlayPoster.pdf"}
   }
-
-
 
   ]
 }
