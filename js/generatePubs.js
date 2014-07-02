@@ -17,8 +17,7 @@ function renderPubs(d, target) {
 
   // Add icon
   if (USE_ICONS) {
-    pubs
-      .append('img')
+    var pubIcon = pubs.append('img')
       .classed('thumbnail', true)
       .attr('src', function(d) {
         return ICON_PATH + d.thumbnail;
@@ -38,6 +37,19 @@ function renderPubs(d, target) {
       .append('a')
       .attr('href', function(d) { return d.pdf; })
       .text(function(d) { return d.title; });
+
+  // Add award icon and text
+  var awardIcon = pubInfo.selectAll('.title')
+      .filter(function(d) { return d.award || ''});
+
+  awardIcon.append('img')
+      .classed('award-icon', true)
+      .attr('src', 'icons/cert.png')
+      .attr('width', 13);
+
+  awardIcon.append('text')
+    .classed('award-text', true)
+    .text(function(d) { return d.award; });
 
   //authors
   pubInfo.append('div')
@@ -66,11 +78,4 @@ function renderPubs(d, target) {
         }
         return supplementals;
       });
-
-
-  // award
-  // pubInfo.filter(function(d) { return d.award || ''; })
-  //     .append('div')
-  //     .classed('award', true)
-  //     .text(function(d) { return d.award; });
 }

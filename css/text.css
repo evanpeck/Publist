@@ -34,6 +34,7 @@ body
 .title
 {
     /*font-weight: bolder;*/
+    font-size:18px;
     color:rgb(145,20,20);
 }
 
@@ -51,10 +52,23 @@ body
 
 .thumbnail
 {
-    display: table-cell;
     float: left;
     margin-right: 20;
     border:1px solid #021a40;
+}
+
+.award-icon
+{
+    margin-left:10;
+    margin-right:5;
+}
+
+.award-text
+{
+    font-size:14px;
+    vertical-align:text-top;
+    color: #474747;
+    text-decoration: underline;
 }
 
 /*.thumbnail:hover
