@@ -165,6 +165,18 @@
   },
 
   {
+    "key"        :  "bci_10",
+    "author"     :  ["Audrey Girouard", "Erin Solovey", "Leanne Hirshfield", "Evan M. Peck", "Krysta Chauncey", "Angelo Sassaroli", "Sergio Fantini", "Robert J.K. Jacob"],
+    "title"      :  "From Brain Signals to Adaptive Interfaces: Using fNIRS in HCI",
+    "venue"      :  "Brain-Computer Interfaces: Applying our Minds to Human-Computer Interaction",
+    "year"       :  2010,
+    "thumbnail"  :  "fNIRS3.png",
+    "pdf"        :  "papers/BHCI_chapter.pdf",
+    "type"       :  "chapter",
+    "supp"       :  {"book link":"http://www.springer.com/computer/hci/book/978-1-84996-271-1"}
+  },
+
+  {
     "key"        :  "mplay_08",
     "author"     :  ["Charles Cusack", "Evan M. Peck", "Maria Riolo"],
     "title"      :  "Volunteer Computing Games: Merging Online Casual Gaming with Volunteer Computing",
@@ -172,7 +184,7 @@
     "year"       :  2008,
     "thumbnail"  :  "pebble.png",
     "pdf"        :  "papers/volunteer_computing.pdf",
-    "type"       :  "paper"
+    "type"       :  "conference"
   },
 
   {

@@ -85,9 +85,20 @@ body
     color: #474747;
 }
 
+.type-tag
+{
+  font-size:14px;
+  color: white;
+  text-align: center;
+  font-weight: bolder;
+  padding-left: 7;
+  padding-right: 7;
+}
+
 .supp
 {
   color: #474747;
+  background-color: white;
 }
 
 a:link, a:visited
