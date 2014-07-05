@@ -45,6 +45,7 @@ body
     float: left;
     margin-right: 20;
     border:1px solid #021a40;
+    border-radius: 10px;
 }
 
 .award-icon
@@ -83,6 +84,7 @@ body
   font-weight: bolder;
   padding-left: 7;
   padding-right: 7;
+  border-radius: 5px;
 }
 
 .supp
