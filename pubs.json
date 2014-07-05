@@ -1,5 +1,4 @@
 {
-
   "publications" : [
 
   {
@@ -122,12 +121,25 @@
   {
     "key"        :  "xrds_11a",
     "author"     :  ["Evan M. Peck", "Erin Solovey"],
-    "title"      :  "Neuroscience and Computing (Issue Editors)",
+    "title"      :  "Neuroscience and Computing Introduction (Issue Editors)",
     "venue"      :  "ACM XRDS: Crossroads",
     "year"       :  2011,
     "thumbnail"  :  "XRDS.png",
     "pdf"        :  "papers/xrds-intro.pdf",
-    "type"       :  "article"
+    "type"       :  "article",
+    "supp"       :  {"full issue": "http://dl.acm.org/citation.cfm?id=2000775.2000778&coll=portal&dl=ACM"}
+  },
+
+  {
+    "key"        :  "xrds_11b",
+    "author"     :  ["Evan M. Peck", "Erin Solovey"],
+    "title"      :  "The Sensorium",
+    "venue"      :  "ACM XRDS: Crossroads",
+    "year"       :  2011,
+    "thumbnail"  :  "XRDS.png",
+    "pdf"        :  "papers/xrds-sensorium.pdf",
+    "type"       :  "article",
+    "supp"       :  {"full issue": "http://dl.acm.org/citation.cfm?id=2000775.2000778&coll=portal&dl=ACM"}
   },
 
   {
@@ -177,7 +189,30 @@
   },
 
   {
-    "key"        :  "mplay_08",
+    "key"        :  "xrds_10",
+    "author"     :  ["Evan M. Peck", "Krysta Chauncey", "Audrey Girouard", "Rebecca Gulotta", "Francine Lalooses", "Erin Solovey", "Douglas Weaver", "Robert J.K. Jacob"],
+    "title"      :  "From Brains to Bytes",
+    "venue"      :  "ACM XRDS: Crossroads",
+    "year"       :  2010,
+    "thumbnail"  :  "xrds2010.png",
+    "pdf"        :  "papers/crossroads_2010.pdf",
+    "type"       :  "article",
+    "supp"       :  {"full issue":"papers/crossroads2010fullissue.pdf"}
+  },
+
+  {
+    "key"        :  "osa_10",
+    "author"     :  ["Angelo Sassaroli", "F. Zheng", "Audrey Girouard", "Erin Solovey", "Krysta Chauncey", "Leanne Hirshfield", "Evan M. Peck", "Robert J.K. Jacob", "Sergio Fantini"],
+    "title"      :  "Application of Correlation Analysis Tools for the Classification of Mental Workloads in Functional Near-Infrared Spectroscopy",
+    "venue"      :  "Biomedical Optics",
+    "year"       :  2010,
+    "thumbnail"  :  "correlationAnalysis.png",
+    "pdf"        :  "papers/CorrelationAnalysis2010.pdf",
+    "type"       :  "poster"
+  },
+
+  {
+    "key"        :  "mplay_08a",
     "author"     :  ["Charles Cusack", "Evan M. Peck", "Maria Riolo"],
     "title"      :  "Volunteer Computing Games: Merging Online Casual Gaming with Volunteer Computing",
     "venue"      :  "Meaningful Play",
@@ -185,6 +220,16 @@
     "thumbnail"  :  "pebble.png",
     "pdf"        :  "papers/volunteer_computing.pdf",
     "type"       :  "conference"
+  },
+
+  {
+    "key"        :  "mplay_08b",
+    "author"     :  ["Charles Cusack", "Andrew Foster", "Jeff Largent", "Kevin Browder", "Evan M. Peck"],
+    "title"      :  "Pebble It: A Human Computing Game",
+    "venue"      :  "Meaningful Play",
+    "year"       :  2008,
+    "thumbnail"  :  "pebble.png",
+    "type"       :  "demo"
   },
 
   {

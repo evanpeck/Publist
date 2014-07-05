@@ -10,6 +10,9 @@ SHOW_YEAR_HEADINGS = true;
 SHOW_TYPE_HEADINGS = false;
 //-------------------------
 
+// The order the that types are grouped during each year
+GROUP_ORDER = ['dissertation', 'journal', 'conference', 'chapter', 'workshop', 'poster', 'article', 'demo'];
+
 ICON_PATH =  "images/";
 ICON_SIZE = 95;
 
@@ -21,8 +24,9 @@ d3.json('pubs.json', function(json){
 
     var nested_data = d3.nest()
       .key(function(d) {return d.year;})
-      .sortKeys(d3.descending)
+        .sortKeys(d3.descending)
       .key(function(d) {return d.type;})
+        .sortKeys(function(a,b) { return GROUP_ORDER.indexOf(a) - GROUP_ORDER.indexOf(b); })
       .entries(json.publications);
 
     buildYears(nested_data, '#publications');
@@ -140,7 +144,7 @@ function renderPubs(pubData, target) {
       if (d.hasOwnProperty('pdf'))
         supplementals += '<a href="' + d.pdf + '"> pdf </a>';
       else
-        supplementals += '<i>Coming Soon</i>'
+        supplementals += ''
 
       // then add everything else
       for (var link in d.supp) {
