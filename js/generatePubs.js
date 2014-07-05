@@ -1,14 +1,31 @@
 MY_NAME = "Evan M. Peck";
-USE_ICONS = true;
+
+// DISPLAY OPTIONS -------
+SHOW_THUMBNAILS = true;
+SHOW_TYPE_TAGS = true;
+SHOW_YEAR_HEADINGS = true;
+// Note that this is still organized by year,
+// so it doesn't make sense for this to be true
+// and SHOW_YEAR_HEADINGS to be false.
+SHOW_TYPE_HEADINGS = false;
+//-------------------------
+
 ICON_PATH =  "images/";
 ICON_SIZE = 95;
 
 // Assumes that we are only going to have 10
 var tagColor;
 
-d3.json('pubs.json', function(d){
-    createTypeColors(d.publications);
-    renderPubs(d.publications, '#publications');
+d3.json('pubs.json', function(json){
+    createTypeColors(json.publications);
+
+    var nested_data = d3.nest()
+      .key(function(d) {return d.year;})
+      .sortKeys(d3.descending)
+      .key(function(d) {return d.type;})
+      .entries(json.publications);
+
+    buildYears(nested_data, '#publications');
 });
 
 function createTypeColors(d) {
@@ -21,31 +38,60 @@ function createTypeColors(d) {
   tagColor = d3.scale.category10().domain(types);
 }
 
-function renderPubs(d, target) {
-  var div = d3.select(target);
-  var pubs = div.selectAll('pub')
-      .data(d);
+// Organize by year of publication
+function buildYears(pubData, target) {
+  var years = d3.select(target).selectAll('.yearGroup')
+    .data(pubData)
+    .enter().append('div')
+    .classed('yearGroup', true);
+
+  if (SHOW_YEAR_HEADINGS)
+    years.append('h2').text(function(d) {return d.key; });
+
+  years.each(buildTypes);
+}
+
+// Organize by type of publication
+function buildTypes() {
+  var types = d3.select(this).selectAll('.typeGroup')
+    .data(function(d) {return d.values; })
+    .enter().append('div')
+    .classed('typeGroup', true);
+
+  if (SHOW_TYPE_HEADINGS)
+    types.append('h3').text(function(d) { return d.key; });
+  types.each(renderPubs);
+}
+
+// Generate publications
+function renderPubs(pubData, target) {
+  var pubs = d3.select(this).selectAll('pub')
+      .data(function(d) {return d.values;});
 
   pubs.enter().append('div')
       .classed('pub', true);
 
-  // representative image
-  var pubIcon = pubs.append('img')
-    .classed('thumbnail', true)
-    .attr('src', function(d) {
-      return ICON_PATH + d.thumbnail;
-    })
-    .attr('width', ICON_SIZE)
-    .attr('height',ICON_SIZE);
+  if (SHOW_THUMBNAILS) {
+    // representative image
+    var pubIcon = pubs.append('img')
+      .classed('thumbnail', true)
+      .attr('src', function(d) {
+        return ICON_PATH + d.thumbnail;
+      })
+      .attr('width', ICON_SIZE)
+      .attr('height',ICON_SIZE);
+  }
 
-  // tag that shows pub type
-  pubs.append('text')
-    .classed('type-tag', true)
-    .text(function(d) { return d.type + ''; })
-    .style('background-color', function(d) {
-      return tagColor(d.type);
-    })
-    .style('opacity', 0.5);
+  if (SHOW_TYPE_TAGS) {
+    // tag that shows pub type
+    pubs.append('text')
+      .classed('type-tag', true)
+      .text(function(d) { return d.type + ''; })
+      .style('background-color', function(d) {
+        return tagColor(d.type);
+      })
+      .style('opacity', 0.5);
+  }
 
 // Div for all the publication info
   var pubInfo = pubs.append('div')
@@ -93,12 +139,13 @@ function renderPubs(d, target) {
       var supplementals = ''
       if (d.hasOwnProperty('pdf'))
         supplementals += '<a href="' + d.pdf + '"> pdf </a>';
+      else
+        supplementals += '<i>Coming Soon</i>'
+
       // then add everything else
       for (var link in d.supp) {
         supplementals += '| <a href="' + d.supp[link] + '"> ' + link + '</a> ';
       }
       return supplementals;
     });
-
-
 }

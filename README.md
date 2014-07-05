@@ -1,6 +1,8 @@
 Publist
 =======
 
-Using d3 to generate a publication list. Based heavily on https://github.com/codementum/cv-site
+The goal of Publist is to create a pretty publication list with as little effort as possible.
+
+(Based heavily on https://github.com/codementum/cv-site)
 
 In progress...

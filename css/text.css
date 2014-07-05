@@ -11,18 +11,14 @@ body
 .pub
 {
   margin-bottom: 15px;
+  /*Indentation for year*/
+  margin-left: 15px;
 }
 
 .pubInfo
 {
   display: table-cell;
   font-size: 95%;
-}
-
-.section
-{
-    padding-top: 15px;
-    margin-bottom: 10px;
 }
 
 .me
@@ -36,12 +32,6 @@ body
     /*font-weight: bolder;*/
     font-size:18px;
     color:rgb(145,20,20);
-}
-
-.award
-{
-    font-weight: bolder;
-    color: #E86C4B;
 }
 
 .venue
@@ -100,6 +90,13 @@ body
   color: #474747;
   background-color: white;
 }
+
+h3
+{
+  color: #707070;
+
+}
+
 
 a:link, a:visited
 {
