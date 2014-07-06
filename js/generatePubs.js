@@ -8,24 +8,34 @@ SHOW_YEAR_HEADINGS = true;
 // so it doesn't make sense for this to be true
 // and SHOW_YEAR_HEADINGS to be false.
 SHOW_TYPE_HEADINGS = false;
+// If true, assumes that there is a pub_grouping mapping in the json object
+USE_CUSTOM_GROUPS = false;
 //-------------------------
 
 // The order the that types are grouped during each year
 GROUP_ORDER = ['dissertation', 'journal', 'conference', 'chapter', 'workshop', 'poster', 'article', 'demo'];
+// If using custom grouping, I use this order
+// GROUP_ORDER = ['journal/chapter','conference/workshop', 'other'];
 
 ICON_PATH =  "images/";
 ICON_SIZE = 95;
 
 // Assumes that we are only going to have 10
 var tagColor;
+// If we use customs group, this maps orig type name to custom group name
+var groupMap;
 
 d3.json('pubs.json', function(json){
+
+    if (USE_CUSTOM_GROUPS)
+        groupMap = d3.map(json.pub_grouping);
+
     createTypeColors(json.publications);
 
     var nested_data = d3.nest()
       .key(function(d) {return d.year;})
         .sortKeys(d3.descending)
-      .key(function(d) {return d.type;})
+      .key(function(d) { return USE_CUSTOM_GROUPS ? groupMap.get(d.type) : d.type; })
         .sortKeys(function(a,b) { return GROUP_ORDER.indexOf(a) - GROUP_ORDER.indexOf(b); })
       .entries(json.publications);
 

@@ -1,4 +1,16 @@
 {
+
+  "pub_grouping" : {
+    "conference" :  "conference/workshop",
+    "workshop"   :  "conference/workshop",
+    "journal"    :  "journal/chapter",
+    "dissertation": "journal/chapter",
+    "chapter"    :  "journal/chapter",
+    "poster"     :  "other",
+    "article"    :  "other",
+    "demo"       :  "other"
+  },
+
   "publications" : [
 
   {
